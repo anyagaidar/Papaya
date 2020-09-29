@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Automation Framework" parallel="tests">
+    <test name="FF Local">
+        <parameter name="browserName" value="firefox"/>
+        <classes>
+            <class name="HotLineMainPageTest"/>
+            <class name="HotLineLoginPageTest"/>
+            <class name="GooglePageTest"/>
+        </classes>
+    </test>
+<!--    <test name="Chrome Local">-->
+<!--        <parameter name="browserName" value="chrome"/>-->
+<!--        <classes>-->
+<!--            <class name="HotLineLoginPageTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+</suite>
